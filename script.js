@@ -1,5 +1,5 @@
 const typedText = document.querySelector(".typed-text");
-const words = ["Web Developer", "UI/UX Designer", "Photographer"];
+const words = ["Web Developer","Photographer" , "Freelancer" ,"Web Designer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
