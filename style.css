@@ -176,7 +176,7 @@
   background: url(https://wp.w3layouts.com/ui-portfolio/wp-content/themes/ui-portfolio/assets/images/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  height: 98vh;
+  height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -247,7 +247,9 @@
 }
 
 .hero-image img {
-    width: 300px;
+   
+    height: 540px;
+    width: 420px;
     border-radius: 10px;
 }
 .my-portfolio {
@@ -274,8 +276,132 @@
     background-color: white;
     animation: blink 0.7s infinite;
 }
+.bio-section {
+     margin-top: 20px;
+    padding: 60px 20px;
+    background: #fff;
+  }
+  
+  .bio-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: center;
+  }
+  
 
+  .bio-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    transition: transform 10s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    will-change: transform;
+  }
+  
+  .bio-image img:hover {
+    transform: rotateY(360deg);
+  }
+  
 
+  .bio-content {
+    height: 600px;
+    flex: 1;
+    color: #333;
+  }
+  
+  .bio-content h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .bio-content h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .bio-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .bio-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 40px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .bio-info strong {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 29px;
+    color: #222;
+  }
+.bio-p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(112, 112, 112) ;
+}
+  .social-follow {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+  }
+  
+  .social-follow a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(0, 126, 106);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-follow a:hover {
+    transform: scale(1.2);
+  }
+  .follow{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(64, 64, 68) ;
+  }
+
+.h2-service{
+    font-family: 'DM Sans', sans-serif;
+    font-weight:600;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    color:#404044 ;
+}
+  
 @keyframes blink {
     0%, 50%, 100% {
         opacity: 1;
